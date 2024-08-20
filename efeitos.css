@@ -69,11 +69,12 @@ nav{
 .retan1{
     position: absolute;
     top: 1600px;
-    width: 1920px;
+    width: 1903px;
     height: 300px;
     background-color: rgb(26, 26, 26);
     background-size: cover;
     background-position: center;
+    border-top: 2px solid chocolate;
 }
 .klau{
     position: absolute;
@@ -97,6 +98,20 @@ nav{
 }
 .grid-item{
     width: 300px;
+    height: auto;
+} 
+.gridbotao{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*3 colunas iguais*/
+    grid-template-rows: repeat(2, 50px); /* 2 linhas de 100px */
+    row-gap: 460px;
+    column-gap: 250px;
+    padding: 0px;
+    margin-top: -18%;
+    margin-left: 18%;
+}
+.grid-botao{
+    width: 60px;
     height: auto;
 } 
 
