@@ -113,7 +113,54 @@ nav{
 .grid-botao{
     width: 60px;
     height: auto;
+    transition: transform 0.1s ease-in-out;
+}
+.grid-botao:active{
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}  
+.gridtitulo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*3 colunas iguais*/
+    grid-template-rows: repeat(2, 100px); /* 2 linhas de 100px */
+    gap: 400px 20px;
+    padding: 0px;
+    margin-top: -24%;
+    margin-left: 07.5%;
+}
+.titulo{
+    font-size: 20px;
+    width: 250px;
+    height: auto;
+    font-weight: medium;
+}
+.dados{
+    position: absolute;
+    font-size: 20px;
+    top: 1600px;
+    left: 400px;
+    color: rgb(255, 255, 255);
+    line-height: 70px;
+    z-index: 2;
 } 
+.rodape{
+    position: relative;
+    padding: 20px;
+}
+.whats{
+    position: absolute;
+    top: 1770px;
+    left: 330px;
+    width: 40px;
+    height: auto;
+}
+.insta{
+    position: absolute;
+    top: 1700px;
+    left: 330px;
+    width: 40px;
+    height: auto;
+}
 
 
 
