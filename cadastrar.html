@@ -4,46 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario KLAU</title>
-
-    <form action="tela de login.html"></form>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url('https://logo.criativoon.com/wp-content/uploads/2016/07/logo-natura.png');
-            background-size: cover; /* Faz a imagem cobrir todo o fundo */
-            background-position: top center; /* Alinha a imagem para o topo e centraliza horizontalmente */
+            background-position: top center;
             text-align: center;
-            color: rgb(255, 255, 255);
+            color: chocolate;
+            margin: 0;
+            padding: 0;
         }
         .banner {
-            background-color: rgba(255, 123, 0, 0.985); /* Cor da faixa com transparência */
-            padding: 40px; /* Espaçamento interno */
-            margin-bottom: 20px; /* Espaçamento abaixo da faixa */
-            border-radius: 8px; /* Bordas arredondadas */
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(26, 26, 26);
+            background-size: cover;
+            background-position: center;
+            border-top: 2px solid chocolate;
+            text-align: center;
         }
         h1 {
-            font-size: 36px; /* Aumente o tamanho da fonte aqui */
-            margin: 0; /* Remove margem padrão */
+            font-size: 36px;
+            margin: 0;
+            padding-top: 25px;
+            color: chocolate;
         }
         .box {
-            color: white;
+            color: rgb(0, 0, 0);
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.574);
+            background-color: rgb(255, 255, 255); /* Cor de fundo mais opaca */
             padding: 15px;
             border-radius: 15px;
             width: 20%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra ao redor da caixa */
         }
         fieldset {
-            border: 3px solid rgb(255, 123, 0, 0.985);
+            border: 2px solid rgb(255, 255, 255);
         }
         legend {
-            border: 1px solid rgb(255, 170, 0);
+            border: 1px solid rgb(255, 255, 255);
             padding: 10px;
             text-align: center;
-            background-color: rgb(255, 170, 0);
+            background-color: rgb(255, 255, 255);
             border-radius: 9px;
         }
         .inputBox {
@@ -54,7 +60,7 @@
             border: none;
             border-bottom: 1px solid rgb(0, 0, 0);
             outline: none;
-            color: rgb(255, 254, 254);
+            color: rgb(0, 0, 0);
             font-size: 15px;
             width: 100%;
             letter-spacing: 2px;
@@ -85,8 +91,8 @@
             background-color: deepskyblue;
         }
         .gender {
-            margin: 10px 0; /* Adiciona espaço acima e abaixo da seção de gênero */
-            text-align: left; /* Alinha o texto à esquerda */
+            margin: 10px 0;
+            text-align: left;
         }
         .eye-icon {
             position: absolute;
@@ -99,7 +105,7 @@
 </head>
 <body>
     <div class="banner">
-        <h1>KlauConsultora</h1> <!-- Nome no meio superior da tela -->
+        <h1>KlauConsultora</h1>
     </div>
     <div class="box">
         <form action="">
@@ -137,19 +143,18 @@
                 <div class="inputBox">
                     <input type="password" name="senha" id="senha" class="inputUser" required>
                     <label for="senha" class="labelInput">Senha</label>
-                    <img src="https://img.icons8.com/material-outlined/24/ffffff/visible.png" class="eye-icon" id="togglePassword" onclick="togglePasswordVisibility()" alt="Mostrar Senha"/>
+                    <img src="https://img.icons8.com/material-outlined/24/ffffff/visible.png" class="eye-icon"
+                        id="togglePassword" onclick="togglePasswordVisibility()" alt="Mostrar Senha" />
                 </div>
                 <br><br>
                 <input type="submit" name="submit" id="submit" class="submit">
             </fieldset>
         </form>
     </div>
-
     <script>
         function togglePasswordVisibility() {
             const passwordInput = document.getElementById('senha');
             const eyeIcon = document.getElementById('togglePassword');
-
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
                 eyeIcon.src = 'https://img.icons8.com/material-outlined/24/ffffff/invisible.png'; // Ícone de ocultar
@@ -159,5 +164,6 @@
             }
         }
     </script>
+    
 </body>
 </html>
