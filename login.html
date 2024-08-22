@@ -4,48 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-
-    <form action="cadastrar.html">
-
-    </form>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url('https://logo.criativoon.com/wp-content/uploads/2016/07/logo-natura.png');
-            background-size: cover; /* Faz a imagem cobrir todo o fundo */
-            background-position: top center; /* Alinha a imagem para o topo e centraliza horizontalmente */
-            text-align: center;
             color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
         }
         .banner {
-            background-color: rgba(255, 123, 0, 0.985); /* Cor da faixa com transparência */
-            padding: 40px; /* Espaçamento interno */
-            margin-bottom: 20px; /* Espaçamento abaixo da faixa */
-            border-radius: 8px; /* Bordas arredondadas */
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100px; /* Altura do banner */
+            background-color: rgb(26, 26, 26); /* Cor de fundo do banner */
+            text-align: center;
+            border-top: 2px solid chocolate;
         }
         h1 {
-            font-size: 36px; /* Aumente o tamanho da fonte aqui */
+            font-size: 36px; /* Tamanho da fonte */
             margin: 0; /* Remove margem padrão */
+            padding-top: 25px; /* Espaço acima do texto */
+            color: chocolate; /* Cor do texto */
         }
         .box {
-            color: white;
+            color: rgb(0, 0, 0);
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.574);
+            background-color: rgb(255, 255, 255); /* Fundo mais escuro */
             padding: 15px;
             border-radius: 15px;
             width: 20%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra ao redor da caixa */
         }
         fieldset {
-            border: 3px solid rgb(255, 123, 0, 0.985);
+            border: 2px solid rgb(255, 255, 255); /* Borda da caixa */
         }
         legend {
-            border: 1px solid rgb(255, 170, 0);
+            border: 1px solid rgb(255, 255, 255);
             padding: 10px;
             text-align: center;
-            background-color: rgb(255, 170, 0);
+            background-color: rgb(255, 255, 255);
             border-radius: 9px;
         }
         .inputBox {
@@ -74,7 +74,7 @@
             font-size: 12px;
         }
         .submit {
-            background-color: rgb(5, 87, 251);
+            background-color: chocolate;
             border: none;
             padding: 15px;
             width: 100%;
@@ -84,7 +84,7 @@
             cursor: pointer;
         }
         .submit:hover {
-            background-color: deepskyblue;
+            background-color: rgb(255, 183, 0);
         }
         .eye-icon {
             position: absolute;
@@ -111,7 +111,7 @@
     <div class="box">
         <form action="">
             <fieldset>
-                <legend><b>Login</b></legend>
+                <legend><b>Entrar na conta</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="E-mail" id="E-mail" class="inputUser" required>
